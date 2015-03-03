@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "Joel Martin",
+    "email": "github@martintribe.org",
+    "url": "http://github.com/kanaka"
+  },
+  "name": "websockify",
+  "description": "Modification of websockify JS to allow for use as a module in Node.js",
+  "license": "LGPL-3",
+  "version": "0.6.2-module",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kanaka/websockify.git"
+  },
+  "main": "./websockify.js",
+  "engines": {
+    "node": ">=0.8.9"
+  },
+  "dependencies": {
+    "ws": ">=0.4.27",
+    "base64": "latest",
+    "optimist": "latest",
+    "policyfile": "latest"
+  },
+  "readme": "A JavaScript implementation of the websockify WebSocket-to-TCP bridge/proxy.\n\nCopyright (C) 2013 - Joel Martin (github.com/kanaka)\n\nLicensed under LGPL-3.\n\nSee http://github.com/kanaka/websockify for more info.\n"
+}
