@@ -1,24 +1,14 @@
 {
-  "author": {
-    "name": "Joel Martin",
-    "email": "github@martintribe.org",
-    "url": "http://github.com/kanaka"
-  },
   "name": "websockify",
+  "version": "0.0.1",
   "description": "Modification of websockify JS to allow for use as a module in Node.js",
   "license": "LGPL-3",
-  "version": "0.6.2-module",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/kanaka/websockify.git"
-  },
-  "main": "./websockify.js",
+  "main": "websockify.js",
   "engines": {
     "node": ">=0.8.9"
   },
   "dependencies": {
     "ws": ">=0.4.27",
-    "base64": "latest",
     "optimist": "latest",
     "policyfile": "latest"
   },

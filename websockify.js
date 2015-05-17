@@ -6,7 +6,9 @@
 // Requires node modules: ws, optimist and policyfile
 //     npm install ws optimist policyfile
 
-module.exports = Websockify;
+module.exports = function(options) {
+    return new Websockify(options);
+};
 
 var argv = require('optimist').argv,
     net = require('net'),
@@ -143,7 +145,7 @@ Websockify.prototype.http_error = function (response, code, msg) {
     response.write(msg + "\n");
     response.end();
     return;
-}
+};
 
 // Process an HTTP static file request
 Websockify.prototype.http_request = function (request, response) {
@@ -190,4 +192,4 @@ Websockify.prototype.selectProtocol = function(protocols, callback) {
         console.log("Client must support 'binary' or 'base64' protocol");
         callback(false);
     }
-}
+};
