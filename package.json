@@ -1,6 +1,6 @@
 {
   "name": "websockify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Modification of websockify JS to allow for use as a module in Node.js",
   "license": "LGPL-3",
   "main": "websockify.js",
